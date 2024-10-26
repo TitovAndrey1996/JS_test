@@ -68,12 +68,83 @@
 
 // Return Negative
 
-let numbers = Number(prompt('Number:')); 
-numbers = makeNegative(numbers);
-console.log(numbers); 
+// let numbers = Number(prompt('Number:')); 
+// numbers = makeNegative(numbers);
+// console.log(numbers); 
 
-function makeNegative (num) {
-    if (num > 0) {
-        return -num;
-    } else return num;
+// function makeNegative (num) {
+//     if (num > 0) {
+//         return -num;
+//     } else return num;
+// }
+
+// const nums = [1, 8, 45, 88, 12]
+// nums [5] = 101; 
+// nums [nums.length] = 202; 
+// nums.push (89); 
+// // nums.sort (compare); 
+// nums.sort ((a,b) => a - b); 
+// console.log(nums); 
+// console.log(nums.length); 
+// const numsDouble = nums.map ((num) => num * 2); 
+// console.log(numsDouble); 
+// const numsEven = nums.filter ((num) => num % 2 === 0);
+// console.log(numsEven); 
+// const sum = nums.reduce ((acc, num) => acc + num, 0); 
+// console.log(sum); 
+
+
+// function compare (a, b) {
+//     return a - b; 
+// } 
+
+const AudiQ7 = {
+    make: 'Audi', 
+    model: 'Q7', 
+    price: 60000, 
+    beep: function () {
+        console.log(this.make + ' Beep!');
+    },
+    drive: function () {
+        console.log(this.make + ' Drive!');
+    },
 }
+
+console.log(AudiQ7); 
+AudiQ7.beep(); 
+AudiQ7.drive(); 
+console.log(AudiQ7.model); 
+
+class Car {
+    constructor (make, model, price) {
+        this.make = make; 
+        this.model = model; 
+        this.price = price;
+    }
+    beep () {
+        console.log(this.make + ' Beep!'); 
+    }
+    drive () {
+        console.log(this.make + ' Drive!'); 
+    }
+}
+
+const BmwX5 = new Car ('BMW', 'X5', 50000); 
+console.log(BmwX5); 
+
+const jeepRenegade = new Car ('JEEP', 'Renegade', 15000);
+console.log(JSON.stringify(jeepRenegade)); 
+jeepRenegade.price = 16000; 
+console.log(jeepRenegade); 
+
+const jsonCar = `
+{
+"make": "Audi", 
+"model": "Q7", 
+"price": 60000
+}`; 
+
+const car = JSON.parse(jsonCar); 
+console.log(car); 
+
+
