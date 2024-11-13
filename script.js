@@ -98,53 +98,57 @@
 //     return a - b; 
 // } 
 
-const AudiQ7 = {
-    make: 'Audi', 
-    model: 'Q7', 
-    price: 60000, 
-    beep: function () {
-        console.log(this.make + ' Beep!');
-    },
-    drive: function () {
-        console.log(this.make + ' Drive!');
-    },
-}
+// const AudiQ7 = {
+//     make: 'Audi', 
+//     model: 'Q7', 
+//     price: 60000, 
+//     beep: function () {
+//         console.log(this.make + ' Beep!');
+//     },
+//     drive: function () {
+//         console.log(this.make + ' Drive!');
+//     },
+// }
 
-console.log(AudiQ7); 
-AudiQ7.beep(); 
-AudiQ7.drive(); 
-console.log(AudiQ7.model); 
+// console.log(AudiQ7); 
+// AudiQ7.beep(); 
+// AudiQ7.drive(); 
+// console.log(AudiQ7.model); 
 
-class Car {
-    constructor (make, model, price) {
-        this.make = make; 
-        this.model = model; 
-        this.price = price;
-    }
-    beep () {
-        console.log(this.make + ' Beep!'); 
-    }
-    drive () {
-        console.log(this.make + ' Drive!'); 
-    }
-}
+// class Car {
+//     constructor (make, model, price) {
+//         this.make = make; 
+//         this.model = model; 
+//         this.price = price;
+//     }
+//     beep () {
+//         console.log(this.make + ' Beep!'); 
+//     }
+//     drive () {
+//         console.log(this.make + ' Drive!'); 
+//     }
+// }
 
-const BmwX5 = new Car ('BMW', 'X5', 50000); 
-console.log(BmwX5); 
+// const BmwX5 = new Car ('BMW', 'X5', 50000); 
+// console.log(BmwX5); 
 
-const jeepRenegade = new Car ('JEEP', 'Renegade', 15000);
-console.log(JSON.stringify(jeepRenegade)); 
-jeepRenegade.price = 16000; 
-console.log(jeepRenegade); 
+// const jeepRenegade = new Car ('JEEP', 'Renegade', 15000);
+// console.log(JSON.stringify(jeepRenegade)); 
+// jeepRenegade.price = 16000; 
+// console.log(jeepRenegade); 
 
-const jsonCar = `
-{
-"make": "Audi", 
-"model": "Q7", 
-"price": 60000
-}`; 
+// const jsonCar = `
+// {
+// "make": "Audi", 
+// "model": "Q7", 
+// "price": 60000
+// }`; 
 
-const car = JSON.parse(jsonCar); 
-console.log(car); 
+// const car = JSON.parse(jsonCar); 
+// console.log(car); 
 
 
+let count = 0;
+let prevUserI = 44;
+const currentUserI = prevUserI + count++;
+console.log(currentUserI); 
