@@ -148,7 +148,16 @@
 // console.log(car); 
 
 
-let count = 0;
-let prevUserI = 44;
-const currentUserI = prevUserI + count++;
-console.log(currentUserI); 
+// let count = 0;
+// let prevUserI = 44;
+// const currentUserI = prevUserI + count++;
+// console.log(currentUserI); 
+
+let x = 1; 
+
+function f() {
+    let x = 2; 
+    console.log(x);
+}
+
+f(); 
